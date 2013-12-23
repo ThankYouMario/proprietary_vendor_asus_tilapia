@@ -1,4 +1,4 @@
-# Copyright (C) 2010 The Android Open Source Project
+# Copyright (C) 2013 The ParanoidAndroid Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,6 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# NXP blob(s) necessary for Grouper hardware
+# Elan blob(s) necessary for Grouper/Tilapia hardware
 PRODUCT_PACKAGES := \
-    libpn544_fw
+    touch_fw

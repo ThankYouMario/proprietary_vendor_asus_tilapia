@@ -1,4 +1,4 @@
-# Copyright (C) 2010 The Android Open Source Project
+# Copyright (C) 2013 The ParanoidAndroid Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,9 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Broadcom blob(s) necessary for Grouper hardware
+# Asus blob(s) necessary for Grouper/Tilapia hardware
 PRODUCT_PACKAGES := \
-    glgps \
-    gps.tegra3 \
-    gpsconfig \
-    bcm4330
+    sensors-config \
+    apns-conf \
+    camera.tegra3 \
+    sensors.grouper \
+    libsensors.lightsensor \
+    libxgold-ril \
+    libdrmwvmplugin \
+    libwvm

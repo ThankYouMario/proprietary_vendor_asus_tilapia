@@ -1,4 +1,4 @@
-# Copyright (C) 2010 The Android Open Source Project
+# Copyright (C) 2010 The ParanoidAndroid Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,14 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_STEM := device-partial.mk
-
-$(call inherit-product-if-exists, vendor/asus/tilapia/asus/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/asus/tilapia/broadcom/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/asus/tilapia/elan/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/asus/tilapia/invensense/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/asus/tilapia/nvidia/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/asus/tilapia/nxp/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/asus/tilapia/widevine/$(LOCAL_STEM))
+# Call makefiles
+$(call inherit-product-if-exists, vendor/asus/tilapia/asus/asus.mk)
+$(call inherit-product-if-exists, vendor/asus/tilapia/broadcom/broadcom.mk)
+$(call inherit-product-if-exists, vendor/asus/tilapia/elan/elan.mk)
+$(call inherit-product-if-exists, vendor/asus/tilapia/invensense/invensense.mk)
+$(call inherit-product-if-exists, vendor/asus/tilapia/nvidia/nvidia.mk)
+$(call inherit-product-if-exists, vendor/asus/tilapia/nxp/nxp.mk)
+$(call inherit-product-if-exists, vendor/asus/tilapia/widevine/widevine.mk)
 
 PRODUCT_RESTRICT_VENDOR_FILES := owner

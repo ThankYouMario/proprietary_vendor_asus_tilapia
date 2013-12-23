@@ -1,4 +1,4 @@
-# Copyright (C) 2010 The Android Open Source Project
+# Copyright 2013 The ParanoidAndroid Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Elan blob(s) necessary for Grouper hardware
+# Widevine blob(s) necessary for Grouper hardware
 PRODUCT_PACKAGES := \
-    touch_fw
+    libdrmdecrypt \
+    libwvdrm_L1 \
+    libWVStreamControlAPI_L1
