@@ -17,15 +17,6 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),tilapia)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := btmacreader
-LOCAL_MODULE_OWNER := broadcom
-LOCAL_SRC_FILES := btmacreader
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_MODULE_PATH := $(TARGET_OUT)/bin
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := camera.tegra3
 LOCAL_MODULE_OWNER := nvidia
 LOCAL_SRC_FILES := camera.tegra3.so
