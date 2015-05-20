@@ -16,6 +16,7 @@
 
 # Asus blob(s) necessary for Tilapia hardware
 PRODUCT_PACKAGES := \
+    btmacreader \
     camera.tegra3 \
     libdrmwvmplugin \
     libsensors.lightsensor \
